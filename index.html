@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+	<title>Generic Order Form</title>
+	
+	<meta name="description" content="Describe website for search engines.">
+
+	<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="cssIndex.css">
+	<link rel="stylesheet" type="text/css" href="cssCustomer.css">
+	<link rel="stylesheet" type="text/css" href="cssEntry.css">
+	<link rel="stylesheet" type="text/css" href="cssTally.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+<body>
+	<div id="tablet">
+		<div id="heading">
+			<img class="headingImg" src="./image/pieCherry.png" alt="Cherry Pie">
+			<div id="headingTitle">
+				<div id="title">Martha's Amish Bakery</div>
+				<div id="subTitle"> Pie Order Form</div>
+			</div>
+			<img class="headingImg" src="./image/pieBlueberry.png" alt="Blueberry Pie">		
+		</div>
+
+		<div id="entryArea">
+
+			<div id="whoAndWhen" class="customerRow">
+				<div id="whoWanted" class="customerColumn">
+					<div id="customer" class="customerColumn">
+						<div>Customer:</div>
+						<input type="text" id="who" spellcheck="false">
+					</div>
+					<div id="addCustomer" class="customerRow">
+						<button type="button" id="addNew" class="customerButton">Add New Customer</button>
+						<button type="button" id="submitNew" class="customerButton">Submit New Customer</button>	
+					</div>
+				</div>
+				<div id="whenWanted">
+					<div id="calendar">
+						<div>Delivery date:</div>
+						<input type="text" id="dateWanted">
+					</div>
+				</div>
+			</div>
+
+			<div class="breakline"></div>
+
+			<div class="entry">
+				<div class="selection">
+					<div class="description">Cherry Pie</div>
+					<input type="image" id="cherry" class="selector" name="none" src="./image/pieNone.png"/>
+				</div>
+				<div class="costQty">
+					<div class="quantity">
+						<div id="minus1" class="subAdd">-</div>
+						<div id="qty1" class="qtyNum">0</div>
+						<div id="plus1" class="subAdd">+</div>
+					</div>
+					<div class="pieCost">At $<span id="cherryCost">5.81</span>&nbsp;each,</div>
+					<div class="qtyQuestion">How many?</div>
+				</div>
+				<div class="pieTotal">
+					<div class="pieCostTitle">Cost for Cherry Pie</div>
+					<div class="pieTotalCost">$<span id="cherryTotal">0.00</span></div>
+				</div>
+			</div>
+
+			<div class="breakline"></div>
+
+			<div class="entry">
+				<div class="selection">
+					<div class="description">Blueberry Pie</div>
+					<input type="image" id="blueberry" class="selector" name="none" src="./image/pieNone.png"/>
+				</div>
+				<div class="costQty">
+					<div class="quantity">
+						<div id="minus2" class="subAdd">-</div>
+						<div id="qty2" class="qtyNum">0</div>
+						<div id="plus2" class="subAdd">+</div>
+					</div>
+					<div class="pieCost">At $<span id="blueberryCost">8.35</span>&nbsp;each,</div>
+					<div class="qtyQuestion">How many?</div>
+				</div>
+				<div class="pieTotal">
+					<div class="pieCostTitle">Cost for Blueberry Pie</div>
+					<div class="pieTotalCost">$<span id="blueberryTotal">0.00</span></div>
+				</div>
+			</div>
+
+			<div class="breakline"></div>
+
+			<div class="entry">
+				<div class="selection">
+					<div class="description">Pumpkin Pie</div>
+					<input type="image" id="pumpkin" class="selector" name="none" src="./image/pieNone.png"/>
+				</div>
+				<div class="costQty">
+					<div class="quantity">
+						<div id="minus3" class="subAdd">-</div>
+						<div id="qty3" class="qtyNum">0</div>
+						<div id="plus3" class="subAdd">+</div>
+					</div>
+					<div class="pieCost">At $<span id="pumpkinCost">6.64</span>&nbsp;each,</div>
+					<div class="qtyQuestion">How many?</div>
+				</div>
+				<div class="pieTotal">
+					<div class="pieCostTitle">Cost for Pumpkin Pie</div>
+					<div class="pieTotalCost">$<span id="pumpkinTotal">0.00</span></div>
+				</div>
+			</div>
+
+			<div class="breakline"></div>
+
+			<div id="tally" class="tallyRow">
+
+				<div id="inputButtons">
+					<div id="submit" class="tallyRow">
+						<div id="submitText">To submit this request:</div>
+						<button type="submit" id="submitButton" class="tallyButton">submit</button>
+					</div>
+					<div id="receipt" class="tallyRow">
+						<div id="receiptText">To print a receipt:</div>					
+						<button type="button" id="receiptButton" class="tallyButton">receipt</button>
+					</div>
+				</div>
+				<div id="allCosts">
+					<div id="subTotalLine">Subtotal: $<span id="subTotal" class="costTotal">0.00</span></div>
+					<div id="taxTotalLine">tax (7%): $<span id="taxTotal" class="costTotal">0.00</span></div>
+					<div id="totalLine">Total: $<span id="allTotal" class="costTotal">0.00</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="javascriptCustomer.js"></script>
+	<script src="javascriptEntry.js"></script>
+	<script src="javascriptTally.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+@font-face { src: url("./shortStack.otf"); font-family: shortStack; }
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: shortStack;
+}
+
+#tablet {
+	width: 48rem;
+	margin: 0 auto;
+	padding: 1rem 0;
+	background-color: peru;	
+}
+
+#heading {
+	width: 46rem;
+	height: 8rem;
+	margin: 0 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: navajowhite;
+}
+
+.headingImg {
+	width: 7.5rem;
+	height: 5rem;
+	align-self: center;	
+}
+
+#headingTitle {
+	text-align: center;
+}
+
+#title {
+	font-size: 2.2rem;
+	font-weight: bold;
+	padding: 1.0rem 0 0.8rem 0;
+}
+
+#subTitle {
+	font-size: 1.8rem;
+}

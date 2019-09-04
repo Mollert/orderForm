@@ -1,0 +1,52 @@
+
+.tallyRow {
+	display: flex;
+	flex-direction: row;
+}
+
+#tally {
+	height: 7rem;
+	flex-wrap: nowrap;	
+}
+
+#inputButtons {
+	width: 23rem;
+	font-size: 1.0rem;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0 0 1rem;
+}
+
+#submit {
+	margin: 0 0 1rem 0;
+}
+
+#submitText,
+#receiptText {
+	padding: 0.4rem 1rem 0 0;
+}
+
+.tallyButton {
+	font-size: 0.8rem;
+	padding: 0.4rem 1rem;
+	background-color: peru;
+	border-radius: 0.4rem;
+}
+
+#allCosts {
+	width: 23rem;	
+	text-align: right;
+	margin: 0.8rem 5.4rem 0 0;
+}
+
+#taxTotalLine {
+	margin: 0.3rem 0 0.3rem 0;
+}
+
+.costTotal {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+
