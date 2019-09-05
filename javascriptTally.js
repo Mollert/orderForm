@@ -17,7 +17,7 @@ const tallyCosts = () => {
 let holder = {};
 let pies = ["placeholder", "Cherry", "Blueberry", "Pumpkin"];
 document.getElementById("submitButton").addEventListener("click", () => {
-	event.preventDefault();	
+	event.preventDefault();
 	let customer = document.getElementById("who").value;
 	holder.cusomer = customer;
 	let deliveryDate = document.getElementById("dateWanted").value;	
@@ -29,6 +29,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
 			holder[pies[i]] = which;
 		}
 	}
+	document.getElementById("submitText").textContent = "They're on their way!";
 	console.log(holder);	
 });
 
