@@ -18,7 +18,7 @@
 }
 
 .selection {
-	width: 9rem;
+	width: 10rem;
 	font-size: 1.1rem;
 	font-weight: bold;
 	display: flex;
@@ -82,7 +82,7 @@
 .pieTotal {
 	width: 13rem;
 	text-align: center;
-	margin-left: 13rem;
+	margin-left: 12rem;
 }
 
 .pieCostTitle {

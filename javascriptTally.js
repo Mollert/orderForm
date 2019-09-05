@@ -23,9 +23,9 @@ document.getElementById("submitButton").addEventListener("click", () => {
 	let deliveryDate = document.getElementById("dateWanted").value;	
 	holder.deliveryDate = deliveryDate;
 
-	for ( let i = 1 ; i < 4 ; i++) {
+	for (let i = 1 ; i < 4 ; i++) {
 		let which = document.getElementById("qty" + i).textContent;	
-		if ( which !== "0" ) {
+		if (which !== "0") {
 			holder[pies[i]] = which;
 		}
 	}
@@ -52,5 +52,11 @@ possible.forEach((any) => {
 	});
 });
 */
+/*
+const selections = document.querySelectorAll(".selector");
+console.log(selections[0]["id"]);
+selections.forEach(any => {
+	console.log(any["id"]);
 
-
+});
+*/

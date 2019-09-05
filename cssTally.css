@@ -10,7 +10,7 @@
 }
 
 #inputButtons {
-	width: 23rem;
+	width: 26rem;
 	font-size: 1.0rem;
 	font-weight: bold;
 	display: flex;
@@ -35,7 +35,7 @@
 }
 
 #allCosts {
-	width: 23rem;	
+	width: 20rem;	
 	text-align: right;
 	margin: 0.8rem 5.4rem 0 0;
 }

@@ -11,28 +11,28 @@ const findCustomer = (event) => {
 	letter = event.key;
 
 	if (document.getElementById("who").value === "") {
-		letter = letter.toUpperCase();		
+		letter = letter.toUpperCase();
 		customers.forEach(customer => {
-			if (customer.charAt(0) === letter ) {
+			if (customer.charAt(0) === letter) {
 				carrier.push(customer);
 			}
 		});
 		partName = letter;		
 	} else {
-		partName = document.getElementById("who").value;		
+		partName = document.getElementById("who").value;
 		partName = partName + letter;
 		let nameLength = (partName.length - 1);
-		for ( let i = 0 ; i < carrier.length ; i++ ) {
-			if (carrier[i].charAt(nameLength) !== letter ) {
+		for (let i = 0 ; i < carrier.length ; i++) {
+			if (carrier[i].charAt(nameLength) !== letter) {
 				carrier.splice(i, 1);
 			}			
 		}
 	}
-	if ( carrier.length === 0 ) {
+	if (carrier.length === 0) {
 		document.getElementById("who").style.fontSize = "1rem";
 		document.getElementById("who").value = "add as new customer";
 		document.getElementById("addNew").style.backgroundColor = "orange";
-	} else if ( carrier.length === 1 ) {
+	} else if (carrier.length === 1) {
 		document.getElementById("who").value = carrier[0];
 	} else {
 		document.getElementById("who").value = partName;		
@@ -61,4 +61,3 @@ document.getElementById("submitNew").addEventListener("click", () => {
 
 
 document.getElementById("dateWanted").flatpickr({});
-
