@@ -44,3 +44,13 @@ html, body {
 #subTitle {
 	font-size: 1.8rem;
 }
+
+.indexRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.indexColumn {
+	display: flex;
+	flex-direction: column;
+}

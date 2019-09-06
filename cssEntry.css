@@ -12,17 +12,12 @@
 
 .entry {
 	height: 7rem;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 }
 
 .selection {
 	width: 10rem;
 	font-size: 1.1rem;
 	font-weight: bold;
-	display: flex;
-	flex-direction: column;	
 	align-items: center
 }
 
@@ -41,25 +36,19 @@
 
 .costQty {
 	width: 10rem;
-	display: flex;
-	flex-direction: column;	
 	align-items: center
 }
 
 .quantity {
 	width: 6rem;
 	height: 2.2rem;
-	margin: 0.8rem 0;	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	margin: 0.8rem 0;
 	border: 0.1rem solid lightgray;
 }
 
 .subAdd {
 	width: 1.8rem;
 	font-size: 1.6rem;
-	display: flex;
 	justify-content: center;
 	align-items: center
 }
@@ -73,8 +62,7 @@
 	width: 2.4rem;
 	font-size: 1.4rem;
 	border-left: 0.1rem solid lightgray;
-	border-right: 0.1rem solid lightgray;
-	display: flex;
+	border-right: 0.1rem solid lightgray;	
 	justify-content: center;
 	align-items: center	
 }
@@ -93,4 +81,3 @@
 	font-size: 1.2rem;
 	font-weight: bold;
 }
-

@@ -1,20 +1,12 @@
 
-.tallyRow {
-	display: flex;
-	flex-direction: row;
-}
-
 #tally {
 	height: 7rem;
-	flex-wrap: nowrap;	
 }
 
 #inputButtons {
 	width: 26rem;
 	font-size: 1.0rem;
 	font-weight: bold;
-	display: flex;
-	flex-direction: column;
 	margin: 1rem 0 0 1rem;
 }
 
@@ -48,5 +40,3 @@
 	font-size: 1.2rem;
 	font-weight: bold;
 }
-
-

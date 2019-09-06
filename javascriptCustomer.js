@@ -60,4 +60,9 @@ document.getElementById("submitNew").addEventListener("click", () => {
 });
 
 
-document.getElementById("dateWanted").flatpickr({});
+document.getElementById("dateWanted").flatpickr(
+{
+    altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+});

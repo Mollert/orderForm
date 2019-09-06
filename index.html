@@ -33,13 +33,13 @@
 
 		<div id="entryArea">
 
-			<div id="whoAndWhen" class="customerRow">
-				<div id="whoWanted" class="customerColumn">
-					<div id="customer" class="customerColumn">
+			<div id="whoAndWhen" class="indexRow">
+				<div id="whoWanted" class="indexColumn">
+					<div id="customer" class="indexColumn">
 						<div>Customer:</div>
 						<input type="text" id="who" spellcheck="false">
 					</div>
-					<div id="addCustomer" class="customerRow">
+					<div id="addCustomer" class="indexRow">
 						<button type="button" id="addNew" class="customerButton">Add New Customer</button>
 						<button type="button" id="submitNew" class="customerButton">Submit New Customer</button>	
 					</div>
@@ -54,16 +54,16 @@
 
 			<div class="breakline"></div>
 
-			<div class="entry">
-				<div class="selection">
+			<div class="entry indexRow">
+				<div class="selection indexColumn">
 					<div class="description">Cherry Pie</div>
 					<input type="image" id="cherry" class="selector" name="none" src="./image/pieNone.png" alt="Pie tin"/>
 				</div>
-				<div class="costQty">
-					<div class="quantity">
-						<div id="minus1" class="subAdd">-</div>
-						<div id="qty1" class="qtyNum">0</div>
-						<div id="plus1" class="subAdd">+</div>
+				<div class="costQty indexColumn">
+					<div class="quantity indexRow">
+						<div id="cherryMinus" class="subAdd indexRow">-</div>
+						<div id="cherryQty" class="qtyNum indexRow">0</div>
+						<div id="cherryPlus" class="subAdd indexRow">+</div>
 					</div>
 					<div class="pieCost">At $<span id="cherryCost">5.81</span>&nbsp;each,</div>
 					<div class="qtyQuestion">How many?</div>
@@ -76,16 +76,16 @@
 
 			<div class="breakline"></div>
 
-			<div class="entry">
-				<div class="selection">
+			<div class="entry indexRow">
+				<div class="selection indexColumn">
 					<div class="description">Blueberry Pie</div>
 					<input type="image" id="blueberry" class="selector" name="none" src="./image/pieNone.png" alt="Pie tin"/>
 				</div>
-				<div class="costQty">
-					<div class="quantity">
-						<div id="minus2" class="subAdd">-</div>
-						<div id="qty2" class="qtyNum">0</div>
-						<div id="plus2" class="subAdd">+</div>
+				<div class="costQty indexColumn">
+					<div class="quantity indexRow">
+						<div id="blueberryMinus" class="subAdd indexRow">-</div>
+						<div id="blueberryQty" class="qtyNum indexRow">0</div>
+						<div id="blueberryPlus" class="subAdd indexRow">+</div>
 					</div>
 					<div class="pieCost">At $<span id="blueberryCost">8.35</span>&nbsp;each,</div>
 					<div class="qtyQuestion">How many?</div>
@@ -98,16 +98,16 @@
 
 			<div class="breakline"></div>
 
-			<div class="entry">
-				<div class="selection">
+			<div class="entry indexRow">
+				<div class="selection indexColumn">
 					<div class="description">Pumpkin Pie</div>
 					<input type="image" id="pumpkin" class="selector" name="none" src="./image/pieNone.png" alt="Pie tin"/>
 				</div>
-				<div class="costQty">
-					<div class="quantity">
-						<div id="minus3" class="subAdd">-</div>
-						<div id="qty3" class="qtyNum">0</div>
-						<div id="plus3" class="subAdd">+</div>
+				<div class="costQty indexColumn">
+					<div class="quantity indexRow">
+						<div id="pumpkinMinus" class="subAdd indexRow">-</div>
+						<div id="pumpkinQty" class="qtyNum indexRow">0</div>
+						<div id="pumpkinPlus" class="subAdd indexRow">+</div>
 					</div>
 					<div class="pieCost">At $<span id="pumpkinCost">6.64</span>&nbsp;each,</div>
 					<div class="qtyQuestion">How many?</div>
@@ -120,14 +120,14 @@
 
 			<div class="breakline"></div>
 
-			<div id="tally" class="tallyRow">
+			<div id="tally" class="indexRow">
 
-				<div id="inputButtons">
-					<div id="submit" class="tallyRow">
+				<div id="inputButtons" class="indexColumn">
+					<div id="submit" class="indexRow">
 						<div id="submitText">To submit this request:</div>
 						<button type="submit" id="submitButton" class="tallyButton">submit</button>
 					</div>
-					<div id="receipt" class="tallyRow">
+					<div id="receipt" class="indexRow">
 						<div id="receiptText">To print a receipt:</div>					
 						<button type="button" id="receiptButton" class="tallyButton">receipt</button>
 					</div>

@@ -13,51 +13,24 @@ const tallyCosts = () => {
 	document.getElementById("allTotal").textContent = allTotal.toFixed(2);
 };
 
-
+//const pies = ["cherry", "blueberry", "pumpkin"];
 let holder = {};
-let pies = ["placeholder", "Cherry", "Blueberry", "Pumpkin"];
+
 document.getElementById("submitButton").addEventListener("click", () => {
 	event.preventDefault();
-	let customer = document.getElementById("who").value;
-	holder.cusomer = customer;
-	let deliveryDate = document.getElementById("dateWanted").value;	
-	holder.deliveryDate = deliveryDate;
+	holder.customer = document.getElementById("who").value;
+	holder.deliveryDate = document.getElementById("dateWanted").value;
 
-	for (let i = 1 ; i < 4 ; i++) {
-		let which = document.getElementById("qty" + i).textContent;	
-		if (which !== "0") {
-			holder[pies[i]] = which;
+	for (let i = 0 ; i < pies.length ; i++) {
+		let amount = document.getElementById(pies[i].concat("Qty")).textContent;	
+		if (amount !== "0") {
+			holder[pies[i]] = amount;
 		}
 	}
 	document.getElementById("submitText").textContent = "They're on their way!";
-	console.log(holder);	
+//	console.log(holder);	
 });
 
 document.getElementById("receiptButton").addEventListener("click", () => {
 	window.print();
 });
-
-
-
-/*
-const  possible = document.querySelectorAll(".subAdd");
-
-possible.forEach((any) => {
-	any.addEventListener('click', function(event) {
-		let whichSign = event.target.textContent;
-		let addition = (event.target.id).slice(-1);			
-		let amount = document.getElementById("qty" + addition).textContent;
-		amount = parseInt(amount);		
-		(whichSign === "+") ? amount = amount + 1 : amount = amount - 1	
-		document.getElementById("qty" + addition).textContent = amount;
-	});
-});
-*/
-/*
-const selections = document.querySelectorAll(".selector");
-console.log(selections[0]["id"]);
-selections.forEach(any => {
-	console.log(any["id"]);
-
-});
-*/
