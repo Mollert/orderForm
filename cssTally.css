@@ -14,7 +14,10 @@
 	margin: 0 0 1rem 0;
 }
 
-#submitText,
+#submitText {
+	padding: 0.4rem 0 0 1rem;
+}
+
 #receiptText {
 	padding: 0.4rem 1rem 0 0;
 }
@@ -26,17 +29,36 @@
 	border-radius: 0.4rem;
 }
 
-#allCosts {
-	width: 20rem;	
+#allCostTitles {
+	width: 9.5rem;	
 	text-align: right;
-	margin: 0.8rem 5.4rem 0 0;
+	margin: 1.1rem 0.5rem 0 0;
 }
 
 #taxTotalLine {
-	margin: 0.3rem 0 0.3rem 0;
+	padding: 0.3rem 0;
+}
+
+#allCosts {
+	width: 5.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;	
+	text-align: right;
+	margin: 1rem 0 0 0;
 }
 
 .costTotal {
-	font-size: 1.2rem;
-	font-weight: bold;
+	padding: 0 0.5rem 0 0;
+}
+
+#taxTotal {
+	padding: 0.2rem 0.5 0.2rem 0;
+}
+
+#totalBorder {
+	border: 0.1rem solid black;
+}
+
+#fillRow {
+	width: 5rem;
 }

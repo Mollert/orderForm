@@ -124,19 +124,26 @@
 
 				<div id="inputButtons" class="indexColumn">
 					<div id="submit" class="indexRow">
-						<div id="submitText">To submit this request:</div>
 						<button type="submit" id="submitButton" class="tallyButton">submit</button>
+						<div id="submitText">Click to submit request.</div>
 					</div>
 					<div id="receipt" class="indexRow">
-						<div id="receiptText">To print a receipt:</div>					
+						<div id="receiptText">Click to print a receipt:</div>		
 						<button type="button" id="receiptButton" class="tallyButton">receipt</button>
 					</div>
 				</div>
-				<div id="allCosts">
-					<div id="subTotalLine">Subtotal: $<span id="subTotal" class="costTotal">0.00</span></div>
-					<div id="taxTotalLine">tax (7%): $<span id="taxTotal" class="costTotal">0.00</span></div>
-					<div id="totalLine">Total: $<span id="allTotal" class="costTotal">0.00</span></div>
+				<div id="allCostTitles" class="indexColumn">
+					<div id="subTotalLine">Subtotal: $</div>
+					<div id="taxTotalLine">tax (7%): $</div>
+					<div id="totalLine">Total: $</div>
 				</div>
+				<div id="allCosts" class="indexColumn">
+					<div id="subTotal" class="costTotal">0.00</div>
+					<div id="taxTotal" class="costTotal">0.00</div>
+					<div id="allTotal" class="costTotal">0.00</div>
+					<div id="totalBorder"></div>
+				</div>
+				<div id="fillRow"></div>
 			</div>
 		</div>
 	</div>
