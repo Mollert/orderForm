@@ -1,0 +1,83 @@
+
+#entryArea {
+	margin: 0 1rem;
+	background-color: linen;
+}
+
+.breakline {
+	width: 38rem;
+	margin: 0 5rem;
+	border-bottom: 0.2rem solid navajowhite;
+}
+
+.entry {
+	height: 7rem;
+}
+
+.selection {
+	width: 10rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	align-items: center
+}
+
+.description {
+	padding: 0.4rem 0 0.6rem 0;
+}
+
+.selection input {
+	width: 3.6rem;
+	height: 3.6rem;
+}
+
+.selection input:focus {
+	outline: 0;
+}
+
+.costQty {
+	width: 10rem;
+	align-items: center
+}
+
+.quantity {
+	width: 6rem;
+	height: 2.2rem;
+	margin: 0.8rem 0;
+	border: 0.1rem solid lightgray;
+}
+
+.subAdd {
+	width: 1.8rem;
+	font-size: 1.6rem;
+	justify-content: center;
+	align-items: center
+}
+
+.subAdd:hover {
+	cursor: pointer;
+	background-color: navajowhite;
+}
+
+.qtyNum {
+	width: 2.4rem;
+	font-size: 1.4rem;
+	border-left: 0.1rem solid lightgray;
+	border-right: 0.1rem solid lightgray;	
+	justify-content: center;
+	align-items: center	
+}
+
+.pieTotal {
+	width: 13rem;
+	text-align: center;
+	margin-left: 12rem;
+}
+
+.pieCostTitle {
+	padding: 1.6rem 0 1rem 0;
+}
+
+.pieTotalCost {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
